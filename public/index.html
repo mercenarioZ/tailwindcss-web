@@ -4,18 +4,75 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="./output.css" rel="stylesheet" />
+        <link href="./output.css" type="text/css" rel="stylesheet" />
 
         <title>Document</title>
     </head>
     <body>
         <div id="root">
-            <div class="content-wrapper">
-                <header>This is header</header>
+            <div
+                class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-300"
+            >
+                <!--max 1536px-->
+                <header class="py-6 mx-10">
+                    <nav class="flex flex-row items-center justify-between">
+                        <div
+                            class="logo basis-2/6 text-center font-semibold text-2xl"
+                        >
+                            Logo Position
+                        </div>
+                        <ul
+                            class="basis-3/6 uppercase text-sm text-gray-500 font-medium flex justify-center gap-8"
+                        >
+                            <li class="custom-top-menu-items">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="custom-top-menu-items">
+                                <a href="#">Our Products</a>
+                            </li>
+                            <li class="custom-top-menu-items">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="custom-top-menu-items">
+                                <a href="#">Contact</a>
+                            </li>
+                            <li class="custom-top-menu-items">
+                                <a href="#">StyleGuide</a>
+                            </li>
+                        </ul>
+
+                        <ul
+                            class="basis-1/6 flex justify-start items-center uppercase text-sm font-medium"
+                        >
+                            <li class="custom-top-menu-items">
+                                <a class="flex items-center gap-1" href="#">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="custom-icon"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                                        />
+                                    </svg>
+
+                                    <span class="ml-1">Cart</span>
+
+                                    <span class="text-xs bg-orange-200 text-center rounded-full px-1">5</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
                 <main>
                     <div class="slider">slider</div>
-                    <div class="story">story text</div>
-                    <div class="featured-mugs">Featured mugs</div>
+                    <div class="story">story</div>
+                    <div class="featured-mugs">featured-mugs</div>
                     <div class="product">product</div>
                     <div class="magazine">magazine</div>
                     <div class="lifestyle">lifestyle</div>
