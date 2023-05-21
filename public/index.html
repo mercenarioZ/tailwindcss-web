@@ -5,26 +5,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./output.css" type="text/css" rel="stylesheet" />
+        <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16" />
 
         <title>Document</title>
     </head>
     <body>
         <div id="root">
             <div
-                class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-300"
+                class="font-Karla content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-300"
             >
                 <!--max 1536px-->
-                <header class="py-6 mx-10">
-                    <nav class="flex flex-row items-center justify-between">
+                <header class="p-6 mx-auto">
+                    <nav class="flex flex-row items-center relative justify-between">
                         <div
                             class="logo basis-2/6 text-center font-semibold text-2xl"
                         >
-                            Logo Position
+                            Logo.
                         </div>
                         <ul
-                            class="basis-3/6 uppercase text-sm text-gray-500 font-medium flex justify-center gap-8"
+                            id="top-menu"
+                            class="hidden lg:flex basis-3/6 uppercase text-sm text-gray-600 font-medium justify-end gap-8"
                         >
-                            <li class="custom-top-menu-items">
+                            <li class="custom-top-menu-items custom-top-menu-items-active">
                                 <a href="#">Home</a>
                             </li>
                             <li class="custom-top-menu-items">
@@ -42,7 +44,7 @@
                         </ul>
 
                         <ul
-                            class="basis-1/6 flex justify-start items-center uppercase text-sm font-medium"
+                            class="basis-3/6 lg:basis-1/6 flex justify-end items-center uppercase text-sm font-medium"
                         >
                             <li class="custom-top-menu-items">
                                 <a class="flex items-center gap-1" href="#">
@@ -61,16 +63,38 @@
                                         />
                                     </svg>
 
-                                    <span class="ml-1">Cart</span>
+                                    <span class="mx-1">Cart</span>
 
-                                    <span class="text-xs bg-orange-200 text-center rounded-full px-1">5</span>
+                                    <span
+                                        class="text-xs bg-orange-200 text-center rounded-full px-1.5"
+                                        >5</span
+                                    >
                                 </a>
                             </li>
                         </ul>
+                        <!--Menu icon-->
+                        <svg
+                            id="toggle-top-menu-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="flex pl-4 sm:pl-2 custom-icon lg:hidden basis-1/6 cursor-pointer"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                            />
+                        </svg>
                     </nav>
                 </header>
                 <main>
-                    <div class="slider">slider</div>
+                    <div
+                        class="slider h-[530px] bg-[url('./image/slider_img.jpg')]"
+                    >
+                    </div>
                     <div class="story">story</div>
                     <div class="featured-mugs">featured-mugs</div>
                     <div class="product">product</div>
@@ -83,4 +107,6 @@
         </div>
         <!--End root-->
     </body>
+
+    <script src="script.js" type="text/javascript" async></script>
 </html>
